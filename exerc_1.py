@@ -27,8 +27,6 @@ def recursive_copy(source: Path, output: Path):
 
 def main():
     args = parse_argv()
-    # print(args.output)
-    # args.output.mkdir(parents=True, exist_ok=True) # Створюємо директорію призначення якщо вона не існує
     recursive_copy(args.source, args.output)
     
 
